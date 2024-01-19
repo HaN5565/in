@@ -1,0 +1,28 @@
+.btn {
+    text-align: center;
+    width: 100%;
+    color: #598D66;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0;
+    border: 1px solid #598D66;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #598D66;
+    color: #F4F6F5;
+}
+
+.btn:active {
+    border: 1px solid #598D66;
+    background: #D4E8D9;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 18px;
+    }
+}

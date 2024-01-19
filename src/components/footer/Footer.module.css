@@ -1,0 +1,163 @@
+footer {
+    margin-top: 70px;
+    width: 100%;
+    background: #E1EDE6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 23px 0;
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    row-gap: 41px;
+}
+
+.logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #598D66;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.contacts h1 {
+    color: #2C2D35;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contacts h2 {
+    color: #86928B;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footerMiddle {
+    display: flex;
+    gap: 60px;
+}
+
+.footerTitle {
+    color: #2C2D35;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footerLink {
+    color: #86928B;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.footerLink:hover {
+    color: #598D66;
+}
+
+.footerLink:active {
+    color: #376B44;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footerImage {
+    display: flex;
+    gap: 30px;
+}
+
+.footerLinkSmall {
+    color: #86928B;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.footerLinkSmall:hover {
+    color: #598D66;
+}
+
+.footerLinkSmall:active {
+    color: #376B44;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+        flex-direction: column;
+    }
+
+    .footerLeft {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .footerMiddle {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #C3D1C6;
+    }
+
+    .footerRight {
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .footerRight div {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .footerLeft {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .footerMiddle {
+        flex-wrap: wrap;
+    }
+}
