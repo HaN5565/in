@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './ReproductionsItems.module.css'
 import Mybtn from '../../../ui/MyBtn/Mybtn';
+import ReproductionsAnimated from '../ReproductionsAnimated';
 
 const ReproductionsItemsEngland = (props) => {
 
@@ -20,9 +21,11 @@ const ReproductionsItemsEngland = (props) => {
     )
 
     return (
-        <div className={s.ReproductionsItems}>
-            {item}
-        </div>
+        <ReproductionsAnimated>
+            <div className={s.ReproductionsItems}>
+                {item}
+            </div>
+        </ReproductionsAnimated>
     );
 };
 

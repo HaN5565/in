@@ -1,10 +1,11 @@
 import React from 'react';
 import s from './ReproductionsItems.module.css'
 import Mybtn from '../../../ui/MyBtn/Mybtn';
+import ReproductionsAnimated from '../ReproductionsAnimated';
 
 const ReproductionsItemsFrance = (props) => {
 
-    const item = props.stateFrance.map((item, index) => 
+    const item = props.stateFrance.map((item, index) =>
         <div key={index} className={s.item}>
             <div className={s.itemWrapper}>
                 <img className={s.itemImg} src={item.img} />
@@ -20,9 +21,12 @@ const ReproductionsItemsFrance = (props) => {
     )
 
     return (
-        <div className={s.ReproductionsItems}>
-            {item}
-        </div>
+        <ReproductionsAnimated>
+            <div className={s.ReproductionsItems}>
+                {item}
+            </div>
+        </ReproductionsAnimated>
+
     );
 };
 
