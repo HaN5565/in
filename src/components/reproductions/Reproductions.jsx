@@ -15,7 +15,7 @@ const Reproductions = (props) => {
         <div className={s.reproductions}>
             <div className={s.container}>
                 <ReproductionsTitle />
-                <AnimatePresence  mode='wait'>
+                <AnimatePresence mode='wait'>
                     <Routes key={location.pathname} location={location}>
                         <Route path='/' element={<ReproductionsItemsFrance stateFrance={props.stateFrance} />} />
                         <Route path='Germany' element={<ReproductionsItemsGermany stateGermany={props.stateGermany} />} />
